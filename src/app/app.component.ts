@@ -35,7 +35,6 @@ export class AppComponent {
 
       }.bind(this));
     }.bind(this));
-
   }
 
 
