@@ -10,7 +10,7 @@ export class OrbitListComponent implements OnInit {
   @Input() satellites: Satellite[];
   
   // This line does not work currently
-  // @Input('shouldShowWarning()') warningStyle: boolean; 
+  @Input('shouldShowWarning()') warningStyle: boolean; 
   // warningStyle: boolean = this.satellites.shouldShowWarning();
   
   constructor() { }
