@@ -11,6 +11,7 @@ export class AppComponent {
   sourceList: Satellite[];
   displayList: Satellite[];
 
+// code from earlier step, which has been retained to show it was completed
 //   constructor() {
 //     this.sourceList = [
 //        new Satellite("SiriusXM", "Communication", "2009-03-21", "LOW", true),
