@@ -5,10 +5,20 @@
     width: 225px;
 }
 
-.counts div {
+/* .counts div {
     padding: 8px;
+} */
+
+/* .counts span {
+    float: right;
+} */
+
+table {
+    width: 100%;
+    text-transform: capitalize;
 }
 
-.counts span {
-    float: right;
+td {
+    padding-top: 8px;
+    padding-bottom: 8px;
 }

@@ -1,10 +1,15 @@
 <h3>Satellite Counts:</h3>
-<div class="counts">
-   <div>Total: <span>{{satellites.length}}</span></div>
-   <div>Space Debris: <span>{{debris}}</span></div>
-   <div>Communication: <span>{{communication}}</span></div>
-   <div>Probe: <span>{{probe}}</span></div>
-   <div>Positioning: <span>{{position}}</span></div>
-   <div>Space Station: <span>{{station}}</span></div>
-   <div>Telescope: <span>{{telescope}}</span></div>
+<div class="counts" *ngIf="countsObject">
+
+<table>
+    <tr>
+        <td>Total:</td>
+        <td>{{satellites.length}}</td>
+    </tr>
+    <tr *ngFor="let item of countsObject | keyvalue">
+        <td>{{item.key}}:</td>
+        <td>{{item.value}}</td>
+    </tr>
+</table>
+
 </div>
